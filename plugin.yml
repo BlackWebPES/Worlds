@@ -4,58 +4,56 @@ version: 2.0.3
 api: 3.0.0
 
 author: survanetwork
-description: Easy to use but feature rich World Guard Plugin
-website: https://github.com/survanetwork/Worlds
 
 commands:
   worlds:
-    description: "Worlds"
+    description: ""
     usage: "/worlds list\n/worlds create <worldname> [type]\n/worlds <remove|load|unload|tp> <worldname>\n/worlds <copy|rename> <from> <to>\n/worlds set\n/worlds set permission <permissionstring>\n/worlds set gamemode <survival|creative|adventure|spectator>\n/worlds set <build|pvp|damage|drop|hunger|fly> <true|false>\n/worlds unset <permission|gamemode|build|pvp|damage|drop|hunger|fly>"
     aliases: ["ws"]
 permissions:
   worlds.list:
-    description: "List worlds"
+    description: ""
     default: true
   worlds.admin:
-    description: "Create worlds, delete worlds, set parameters, ..."
+    description: ""
     default: op
     children:
       worlds.admin.create:
-        description: "Create worlds"
+        description: ""
         default: op
       worlds.admin.remove:
-        description: "Remove worlds"
+        description: ""
         default: op
       worlds.admin.copy:
-        description: "Copy worlds"
+        description: ""
         default: op
       worlds.admin.rename:
-        description: "Rename worlds"
+        description: ""
         default: op
       worlds.admin.load:
-        description: "Load worlds"
+        description: ""
         default: op
       worlds.admin.unload:
-        description: "Unload worlds"
+        description: ""
         default: op
       worlds.admin.teleport:
-        description: "Teleport to worlds"
+        description: ""
         default: op
       worlds.admin.set:
-        description: "Set parameters"
+        description: "
         default: op
       worlds.admin.unset:
-        description: "Unset parameters"
+        description: ""
         default: op
       worlds.admin.build:
-        description: "Allow building in protected worlds"
+        description: ""
         default: op
       worlds.admin.interact:
-        description: "Allow interacting in protected worlds"
+        description: ""
         default: op
       worlds.admin.gamemode:
-        description: "Don't change gamemode to world's gamemode"
+        description: ""
         default: false
       worlds.admin.fly:
-        description: "Fly in every world"
+        description: ""
         default: false
